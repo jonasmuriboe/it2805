@@ -1,0 +1,140 @@
+
+body, html {
+    width: 100%;
+    height: 100%;
+	margin: 0;
+	padding: 0;
+	color:#4e4b46;
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+	margin:0;
+}
+
+a:link {
+	color: rgb(51,122,183);
+}
+
+a:visited {
+	color: rgb(46,109,120);
+}
+
+#header {
+	height:86px;
+	border-bottom:3px solid #959186;
+	position:fixed;
+	width:100%;
+	z-index:99999;
+	background:#9cd590;
+	border-top:3px solid #5bba47;
+}
+
+#logo {
+	background-size:120px 120px;
+	background-position:center;
+	background-repeat: no-repeat;
+	height:120px;
+	min-width:380px;
+	max-width:1200px;
+	margin:auto;
+	margin-top:20px;
+	pointer-events: none;
+	background-image:url(../img/Logo_round_green.png);
+
+}
+
+#menu {
+	z-index: 999;
+	position: relative;
+	text-align: center;
+}
+
+#menu>ul {
+	padding:0;
+	list-style: none;
+}
+
+#menu>ul>li {
+  z-index: 900;
+  float: none;
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  padding:10px;
+  font-weight:300;
+}
+
+#menu>ul>li>a {
+  text-decoration:none;
+  color:#2e2c28;
+}
+
+#navbar {
+    height: 100px;
+    padding-top: 150px;
+    text-align: center;
+	background-image: url(../img/noise_beige.png);
+}
+
+#content {
+	background-image: url(../img/noise_gray.png);
+	height: 100%;
+}
+
+
+
+#footer{
+	min-height:308px;
+	background:#2e2c28;
+	border-top:3px solid #4e4b46;
+	width:100%;
+	background-image:url(../img/overlay.png);
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	color:#777;
+	}
+#links{
+	padding-top: 30px;
+	margin: auto;
+	text-align: left;
+	width: 80%;
+
+}
+
+/* body for index */
+#content-index {
+	background-image: url(../img/noise_beige.png);
+	height: 70%;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+	top:0;
+	padding-top:80px;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+.inner {
+	
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+	max-width:700px;
+	padding:20px;
+}
+
+#status {
+	height:100%;
+	background-size:80%;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image:url(../img/Logo_green.png);
+}
+
