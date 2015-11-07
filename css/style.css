@@ -10,6 +10,26 @@ body, html {
 	margin:0;
 }
 
+p {
+    padding:2px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight:300;
+}
+
+h1, h3 {
+    padding:10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight:300;
+}
+
 a:link {
 	color: rgb(51,122,183);
 }
@@ -71,7 +91,7 @@ a:visited {
 }
 
 #navbar {
-    height: 100px;
+    height: 150px;
     padding-top: 150px;
     text-align: center;
 	background-image: url(../img/noise_beige.png);
@@ -81,8 +101,6 @@ a:visited {
 	background-image: url(../img/noise_gray.png);
 	height: 100%;
 }
-
-
 
 #footer{
 	min-height:308px;
@@ -94,17 +112,19 @@ a:visited {
 	background-repeat:no-repeat;
 	color:#777;
 	}
+
 #links{
 	padding-top: 30px;
 	margin: auto;
 	text-align: left;
 	width: 80%;
-
 }
 
 /* body for index */
 #content-index {
 	background-image: url(../img/noise_beige.png);
+    margin-bottom: auto;
+    margin-top: auto;
 	height: 70%;
 }
 
