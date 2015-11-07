@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Design Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<header>
+	<h1>
+		Design Document
+	</h1>
+	<p>
+		Date: 10.10.2015
+		<br>
+		Made by Terje Kristiansen, Kristian Solheim	Bortne, Quang-Tam Huynh and Jonas Hermansen Muribø.
+	</p>
+</header>
+<body>
+	<h3>
+		Administrative Details
+	</h3>
+	<p>
+		Client: Jonas Hermansen Muribø, leader of /dev at Hackerspace NTNU.
+	</p>
+	<h3>
+		Purpose, goals and audience
+	</h3>
+	<p>
+		We wish to inform people, mainly students in and around Trondheim, about what Hackerspace is, what they have done and what they are doing. The webpage should be well structured, and allow the viewers to find important information easily. <!-- Veldig bra syns eg, kb,boy! -->
+	</p>
+	<h3>
+		Navigation Structure
+	</h3>
+            The structure and navigation for the Hackerspace website will very much represent and resemble a complete graph. At the top of the website we will have a navigation bar, where you can get to all of the other pages. This navigation bar will be included in all of the pages so it will be easy to navigate.
+        <br>
+            In the beginning we were thinking of having the navigation bar anchored at the top of the browser whenever you scrolled down. We and the customer see that this might be a bad idea, so therefor we will just anchor a bar for when Hackerspace is open or not, as well as their logo. We will then use the logo to get to the top of the website so you can get to the navigation bar in a fast way. 
+        <br>
+            The reason for why we have chosen this structure, is to make it very easy for the customer and consumer to get the information they want. We will always try to make every information as accessible as possible and we don’t want our consumers to spend a lot of time jumping back and forth to get the information they want.
+          <br>
+            <br>
+        <li>
+            The navigation and structure is described as well as possible in the picture below.
+            <img src="img/sitemap.png">
+        </li>
+        
+    </ul>
+    
+    <h3>
+      Page Layout and Appearance
+  </h3>
+  <p>
+    Hackerspace is a rather new organization, so we think that a modern layout for the webpage would be fitting. We decided to go with a simplistic and clean look for the webpages we will create, and of course to have a general theme through the entire site. 
+    <br>
+    <br>
+    Hackerspace provided us with a color and font theme as well as a couple of images, and they wanted to have a clear notification on the site to show if Hackerspace is open or not. We decided to create a bar at the top of the page that changes color accordingly. There was also a request for displaying the links to related pages on every page, so we decided to create a footer with all the links. 
+</p>
+<img src="img/generalLayout.png" width="600px">
+<ul>
+    <li>
+        Font: Montserrat Regular for the headlines(28pt), Open Sans Light for the paragraphs(12pt) and Open Sans Regular for the ingress(14pt). 
+    </li>
+    <br>
+    <li>
+        Color Scheme
+        <ul>
+            <li>
+                Text: RGB(93,90,84) for all headlines, regular text is black             
+            </li>
+            <li>
+                Background: 
+                <img src="img/noise_gray.png">
+                for the body, and <img src="img/noise_beige.png"> for the navigation bar. These are both noise maps.
+            </li>
+            <li>
+                Borders: We will be using no specific borders, except the contrast between the different backgrounds.
+            </li>
+        </ul>
+    </li>
+    <br>
+    <li>
+        Body width: 940px;
+    </li>
+    <br>
+    <li>
+        Links: For the links we will be using buttons (background-color: RGB: 51,122,183, border: 1px, border-color: RGB: 46,109,164) or simply standard text-links(color: RGB:51,122,183) depending on the situation.
+    </li>
+    <br>
+    <li>
+        Topbar: A Hackerspace logo will be locked at the top of the page along with a bar(RGB: 91, 186, 71 or RGB: 234,153,137), and upon clicking will return user to top of the page. The colored bar will change color depending on whether Hackerspace is open or not. A javascript script will be created to support this function. this bar will be 90px high.
+    </li>
+    <br>
+    <li>
+        Navigation bar: The navigation bar will be placed at the top of the page and will have no borders. It should solely consist of the names of the different pages. The Subgroups option will contain a rolldown menu of the different subgroups and will be created in javascript. 
+    </li>
+    <br>
+    <li>
+        Footer: The footer will have a background color of RGB: 46,44,40 and an overlay provided by Hackerspace. It should contain a number of links.
+    </li>
+</ul>
+<h3>
+  Content
+</h3>
+<ul>
+    <li><b>homepage.html</b>
+        <br>
+        The homepage page will be the users first meeting with our site, and we want to keep it simple and neatly structured. At the top we will have a fixed logo with a banner behind. This logo and the banner will change color according to if the door to hackerspace is open or closed. This logo and banner will be fixed and the logo will be clickable to bring the user back home if the user feels lost. Just below the logo we will have a navigation bar. 
+        
+        <br>
+        <br>
+        A headline together with our logo on the center of the page will also make sure the user know if hackerspace is open or not. At the bottom of the homepage we will have a clickable footer which the user can click to get more information on hackerspace.
+        <br>
+        <br>
+        This simple, clean and informative design will make sure the user knows if hackerspace is open and also make it easy for the user to get access to more information on the different groups in hackerspace.
+        <img src="img/homepage.png" width="600px">
+    </li>
+    <br>
+    <li><b>aboutUs.html</b>
+        <br>
+        This page will have some cool pictures symbolizing all the cool stuff you can do at Hackerspace and below that we will have a few paragraphs informing about all the gadgets and cool technical stuff we have available for people to use at Hackerspace. We will also inform about general opening hours and provide a map of the location so people can easily find us.
+        <br>
+        <br>
+        This page will help us achieve the goal of informing people about what hackerspace is all about. 
+        <br>
+        <br>
+        The text will be displayed in two collumns and a map will be included in the seccond column. The map will have a size of 500px x 400px.
+        <br>
+        <img src="img/aboutUs.png" width="600px">         
+    </li>
+    <br>
+    <li><b>Subgroups</b>
+        <br>
+        dev.html | pr.html | labOperatorene.html | prosjektGruppen.html 
+        <br>
+        <br>
+        These pages will inform about the different groups in Hackerspace and also showcase some of the projects the different groups have created. The pages will have a few paragraphs informing about the specific group and below that we will have some boxes with thumbnail pictures linking to group specific stuff (projects from the project group and dev, events from pr and lab stuff from the lab rats)
+        <br>
+        <br>
+        The main goal for the subgroups pages is to inform about what the different groups in Hackerspace are up to and also provide a page for the group to publish news. These pages will have the same design format and structure. 
+        <br>
+        <br>
+        Each group will have an image representing that group with a size of 750px x 250px under the heading.
+        <br>
+        <img src="img/dev.png" width="600px">       
+    </li>
+    <br>
+    <li><b>equipment.html</b>
+        <br>
+        This page will have a listing of all the equipment available on Hackerspace. The text will be organized as a grid. 
+        <br>
+        <br>
+        The main goal for this page is to show users all the awesome stuff we have at Hackerspace. We will keep the page simple and clean.
+        <br>
+        <br>
+        Each of the equipment will get a spot in the grid with an image of the quipment (150px x 150px) along with some text explaining the image.
+        <br>
+        <img src="img/equipment.png" width="600px">
+    </li>
+    <br>
+    <li><b>events.html</b>
+        <br>
+        This page will have a listing of all the events we are planning. The text will be inside beautiful boxes with thumbnail pictures and links which lead to more info about the specific event.
+        <br>
+        <br>
+        The main goal for this page is to show the users what events we are planning in the future.
+        <br>
+        <img src="img/events.png" width="600px">
+    </li>
+    <br>
+    <li><b>contactUs.html</b>
+        <br>
+        This page will have a headline “Contact Us” and below that a form which the user can write any questions or comments her or she may have. This form will then send the question/comment to the Hackerspace mailing list. 
+        <br>
+        <br>
+        The purpose of this page is to make it easy for the user to get in touch with Hackerspace. 
+        <img src="img/contactUs.png" width="600px">
+    </li>
+</ul>
+<h3>
+  Minimum Requirements
+</h3>
+<ul>
+    <li>
+        As a part of this project we need at least four different javascripts and this is what we are going to use javascript for.
+        <ol>
+            <li>
+                In the navigation bar at the top of the website we will have a menu which is called "grupper". Whenever we hover over that button the dropdown menu will appear. This way we will minimize the amount of pages visible in the navigation bar.                   
+            </li>
+            <li>
+                We want to make a image gallery so that people can look what happens at Hackerspace and showcase all of the projects that is in making. The idea is to have everything in a carousel, where we will add buttons on the side to get to the next picture. We will not use an automatic carousel, just because it is a very bad idea and users might don’t get enough time to look at the pictures.
+            </li>
+            <li>
+                We will have a page with a contact form for questions and comments which will send a message to our mailinglist together with the users email. 
+            </li>
+            <li>
+                The last thing that we will impliment with javascript is the doorapi that they use at Hackerspace. At www.hackerspace.idi.ntnu.no/api/door-api they have a way of telling if the door is open or not. We will have a javascript that can read this information, might have to use some python to read, and have a bar that will be on the website that will update itself whenever the door is open or not. When the door is open, the bar will be green and whenever the door is closed it will be red. This way it will be very easy for the users to see if Hackerspace is open or not. 
+            </li>
+        </ol>
+    </li>
+</ul>
+<h3>
+  Plan
+</h3>
+To make it easy for us, the developers, we will make a plan and organization system, so we have a good overview on how to organize every file and document that is made. 
+Everything will be in a folder that is named WebtekProject where we will put all of the folders, image, and code documents. The outlay of the folder structure will be something like this:
+<ul>
+    <li>homepage.html</li>
+    <li>aboutUs.html</li>
+    <li>dev.html</li>
+    <li>pr.html</li>
+    <li>prosjektgruppen.html</li>
+    <li>labOperatorene.html</li>
+    <li>equipment.html</li>
+    <li>event.html</li>
+    <li>contactUs.html</li>
+    <li>images/
+        <ul>
+            <li>headerbilde1.jpg</li>
+            <li>headerbilde2.jpg</li>
+            <li>headerbilde3.jpg</li>
+        </ul>
+    </li>
+    <li>scripts/
+        <ul>
+            <li>rollOverMeny.js</li>
+            <li>contactUsForm.js</li>
+            <li>headerpiacturechange.js</li>
+            <li>openstatus.js</li>
+        </ul>
+    </li>
+    <li>styles.css</li>
+    </li>
+
+</ul>
+<div class="CSSTable" >
+                <table >
+                    <tr>
+                        <th>
+                            Filename
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            In charge 
+                        </th>
+                        <th>
+                            Deadline  
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            homepage.html
+                        </td>
+                        <td>
+                            the homepage
+                        </td>
+                        <td>
+                            Kristian
+                        </td>
+                        <td>
+                            23.10.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            about.html
+                        </td>
+                        <td>
+                            what we do
+                        </td>
+                        <td>
+                            Kristian
+                        </td>
+                        <td>
+                            30.10.2015
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            dev.html
+                        </td>
+                        <td>
+                            info about dev
+                        </td>
+                        <td>
+                            Terje
+                        </td>
+                        <td>
+                            30.10.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            pr.html
+                        </td>
+                        <td>
+                            info about PR
+                        </td>
+                        <td>
+                            QT
+                        </td>
+                        <td>
+                            23.10.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            prosjektgruppa.html
+                        </td>
+                        <td>
+                            info about prosjektgruppa 
+                        </td>
+                        <td>
+                            QT
+                        </td>
+                        <td>
+                            30.10.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            laboperatorene.html
+                        </td>
+                        <td>
+                            info about laboperatorene
+                        </td>
+                        <td>
+                            Jonas
+                        </td>
+                        <td>
+                            23.10.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            equipment.html
+                        </td>
+                        <td>
+                            info about equipment
+                        </td>
+                        <td>
+                            Jonas
+                        </td>
+                        <td>
+                            30.10.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            event.html
+                        </td>
+                        <td>
+                            info about events
+                        </td>
+                        <td>
+                            Terje
+                        </td>
+                        <td>
+                            23.10.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            contactUs.html
+                        </td>
+                        <td>
+                            how to contact us
+                        </td>
+                        <td>
+                            Kristian
+                        </td>
+                        <td>
+                            30.10.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            contactUsForm.js
+                        </td>
+                        <td>
+                            mail question to mailinglist
+                        </td>
+                        <td>
+                            Terje
+                        </td>
+                        <td>
+                            11.11.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            rolloverMenu.js
+                        </td>
+                        <td>
+                            dropdown menu
+                        </td>
+                        <td>
+                            Jonas
+                        </td>
+                        <td>
+                            11.11.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            headerpicturechange.js
+                        </td>
+                        <td>
+                            change logo
+                        </td>
+                        <td>
+                            Kristian
+                        </td>
+                        <td>
+                            11.11.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            openstatus.js
+                        </td>
+                        <td>
+                            show doorstatus
+                        </td>
+                        <td>
+                            QT
+                        </td>
+                        <td>
+                            11.11.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            imagegallery.js
+                        </td>
+                        <td>
+                            carousel with pictures
+                        </td>
+                        <td>
+                            all
+                        </td>
+                        <td>
+                            14.11.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            styles.css
+                        </td>
+                        <td>
+                            style rules
+                        </td>
+                        <td>
+                            all
+                        </td>
+                        <td>
+                            14.11.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            pictures ?
+                        </td>
+                        <td>
+                            find pictures?
+                        </td>
+                        <td>
+                            all
+                        </td>
+                        <td>
+                            14.11.2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            final overview
+                        </td>
+                        <td>
+                            approve website
+                        </td>
+                        <td>
+                            all
+                        </td>
+                        <td>
+                            15.11.2015
+                        </td>
+                    </tr>
+
+
+
+
+
+
+                </table>
+            </div>
+
+</body>
+</html>
