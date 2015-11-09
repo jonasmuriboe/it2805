@@ -8,6 +8,7 @@ body, html {
 	font-family: 'Open Sans', sans-serif;
 	font-size:18px;
 	margin:0;
+	background-image: url(../img/noise_beige.png);
 }
 
 p {
@@ -113,7 +114,6 @@ a:visited {
 }
 
 #content {
-	background-image: url(../img/noise_gray.png);
 	height: 100%;
 }
 
@@ -137,7 +137,6 @@ a:visited {
 
 /* body for index */
 #content-index {
-	background-image: url(../img/noise_beige.png);
     margin-bottom: auto;
     margin-top: auto;
 	height: 70%;
@@ -165,11 +164,14 @@ a:visited {
 	padding:20px;
 }
 
-#status {
-	height:100%;
-	background-size:80%;
-	background-repeat: no-repeat;
-	background-position:center;
-	background-image:url(../img/Logo_green.png);
-}
+/* icons for about us */
 
+#icons {
+	display: block;
+	text-align: center;
+}
+.icon {
+	width:64px;
+	height:64px;
+
+}
