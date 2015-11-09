@@ -135,6 +135,19 @@ a:visited {
 	width: 80%;
 }
 
+.img-circle {
+    margin: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.columns{
+    -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 3;
+}
+
 /* body for index */
 #content-index {
 	background-image: url(../img/noise_beige.png);
@@ -171,5 +184,29 @@ a:visited {
 	background-repeat: no-repeat;
 	background-position:center;
 	background-image:url(../img/Logo_green.png);
+}
+
+.grid-container{
+    width: 100%; 
+    max-width: 1200px;      
+}
+
+/*-- our cleafix hack -- */ 
+.row:before, 
+.row {
+    content:"";
+    display: table ;
+    clear:both;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+[class*='col-'] {
+    float: left; 
+    min-height: 1px; 
+    width: 25%; 
+    /*-- our gutter -- */
+    padding: 4%; 
 }
 
