@@ -137,6 +137,19 @@ a:visited {
 	width: 80%;
 }
 
+.img-circle {
+    margin: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.columns{
+    -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 3;
+}
+
 /* body for index */
 #content-index {
     margin-bottom: auto;
@@ -182,8 +195,26 @@ a:visited {
 }
 .icon {
 	width:64px;
-	height:64px;
+	height:64px;      
+}
 
+/*-- our cleafix hack -- */ 
+.row:before, 
+.row {
+    content:"";
+    display: table ;
+    clear:both;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+[class*='col-'] {
+    float: left; 
+    min-height: 1px; 
+    width: 25%; 
+    /*-- our gutter -- */
+    padding: 4%; 
 }
 
 .pictures {
@@ -204,3 +235,10 @@ a:visited {
   margin: 3em auto 0;
 }
 
+<<<<<<< HEAD
+=======
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+}
+>>>>>>> ff3f17eee16d72b9fd04b7ce2fb3d633d9e2bade
