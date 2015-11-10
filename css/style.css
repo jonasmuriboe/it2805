@@ -142,7 +142,6 @@ a:visited {
 .img-circle {
     margin: 10%;
     width: 200px;
-    
     border-radius: 100px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     max-width:100%;
@@ -209,7 +208,7 @@ a:visited {
   columns: 2;
   -webkit-column-gap: 5em;
   -moz-column-gap: 5em;
-  column-gap: 0%;
+  column-gap: 5em;
 }
 
 .inner2 {
