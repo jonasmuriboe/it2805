@@ -141,8 +141,8 @@ a:visited {
 
 .img-circle {
     margin: 10%;
-    width: 200px
-    height: 200px;
+    width: 200px;
+    
     border-radius: 100px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     max-width:100%;
@@ -218,24 +218,9 @@ a:visited {
     margin-right: auto; 
 	max-width:80%;
 }
- 
-.row {
-    content:"";
-    display: table ;
-    clear:both;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 
-[class*='col-'] {
-	display: block;
-	text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    float: left; 
-    min-height: 1px; 
-    width: 25%; 
-    /*-- our gutter -- */
-    padding: 4%; 
+.col-3{
+    width: 32.66666667%;
+    display: inline-block;
+    position: relative;
 }
