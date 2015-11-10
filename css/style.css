@@ -208,7 +208,7 @@ a:visited {
   columns: 2;
   -webkit-column-gap: 5em;
   -moz-column-gap: 5em;
-  column-gap: 0%;
+  column-gap: 5em;
 }
 
 .inner2 {
