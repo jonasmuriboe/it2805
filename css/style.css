@@ -112,13 +112,7 @@ a:visited {
 
 }
 
-#content {
-	height: 100%;
-	padding-bottom: 30px;
-	max-width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-}
+
 
 #footer{
 	display: block;
@@ -219,7 +213,25 @@ a:visited {
 }
 
 .col-3{
+    vertical-align: text-top;
+    margin-bottom: 10%;
     width: 32.66666667%;
     display: inline-block;
-    position: relative;
+}
+
+
+@media (max-width: 1000px){
+    .col-3{
+        display: inline;
+    }
+}
+
+
+
+#content {
+	height: 100%;
+	padding-bottom: 30px;
+	max-width: 80%;
+	margin-right: auto;
+	margin-left: auto;
 }
