@@ -26,7 +26,7 @@ h1 {
     padding-left: 15%;
     font-weight: bold;
     font-size: 24px;
-    line-height: 10px;
+    line-height: 5px;
     font-weight:300;
 }
 
@@ -217,9 +217,24 @@ a:visited {
     margin-right: auto; 
 	max-width:80%;
 }
+ 
+.row {
+    content:"";
+    display: table ;
+    clear:both;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
-.col-3{
-    width: 32.66666667%;
-    display: inline-block;
-    position: relative;
+[class*='col-'] {
+	display: block;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    float: left; 
+    min-height: 1px; 
+    width: 25%; 
+    /*-- our gutter -- */
+    padding: 4%; 
 }
