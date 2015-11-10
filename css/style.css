@@ -211,8 +211,7 @@ a:visited {
   column-gap: 5em;
 }
 
-/*-- our cleafix hack -- */ 
-.row:before, 
+ 
 .row {
     content:"";
     display: table ;
@@ -223,6 +222,8 @@ a:visited {
 }
 
 [class*='col-'] {
+    margin-left: auto;
+    margin-right: auto;
     float: left; 
     min-height: 1px; 
     width: 25%; 
