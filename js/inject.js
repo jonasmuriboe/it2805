@@ -1,3 +1,6 @@
+//Injects the most used html into all webpages, i.e the footer, nav-bar and header.
+//This saves us a lot of code in the html documents.
+
 function func() {
 	document.getElementById('footer').innerHTML = '<table id="links">'+
 			'<tr>'+
