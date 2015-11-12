@@ -1,8 +1,8 @@
-function toggleSlide(direction) {
+function toggleSlide(dir) {
     var elements = document.getElementsByClassName("hideable");
     var visibleID = getVisible(elements);
     elements[visibleID].style.display = "none"; 
-    if(!direction) {
+    if((dir)) {
         var makeVisible = prev(visibleID, elements.length); 
     } else {
         var makeVisible = next(visibleID, elements.length); 
