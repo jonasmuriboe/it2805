@@ -172,6 +172,7 @@ a:visited {
 #status {
 	height:100%;
 	background-size:80%;
+	max-width: 70%;
 	background-repeat: no-repeat;
 	background-position:center;
 	background-image:url(../img/Logo_green.png);
