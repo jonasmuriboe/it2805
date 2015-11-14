@@ -1,5 +1,5 @@
 function checkDoor(){
-	//Puts an ifram in the div with id="empty". Sets it to not display anything.
+	//Puts an iframe in the div with id="empty". Sets it to not display anything.
 	document.getElementById("empty").innerHTML='<iframe type="text/html" style="display:none;" src="127.0.0.1:5000/api/door" style=""></iframe>';
 	//Upon loading the iframe, call the function below.
 	document.getElementsByTagName("iframe")[0].addEventListener("load", function(){
