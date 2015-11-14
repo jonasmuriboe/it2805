@@ -54,6 +54,7 @@ a:visited {
 	color: rgb(46,109,120);
 }
 
+/*header*/
 #header {
 	height:86px;
 	border-bottom:3px solid #959186;
@@ -75,9 +76,9 @@ a:visited {
 	margin-top:20px;
 	pointer-events: none;
 	background-image:url(../img/Logo_round_green.png);
-
 }
 
+/* navigation bar */
 #menu {
 	z-index: 999;
 	text-align: center;
@@ -115,7 +116,7 @@ a:visited {
 }
 
 
-
+/* footer */
 #footer{
 	display: block;
 	min-height:308px;
@@ -135,40 +136,18 @@ a:visited {
 	width: 80%;
 }
 
-.img-circle {
-    margin: 10%;
-    width: 200px;
-    border-radius: 100px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    max-width:100%;
-    max-height: 100%
-}
 
 /* body for index */
 #content-index {
-    margin-bottom: auto;
-    margin-top: auto;
+  margin-bottom: auto;
+  margin-top: auto;
 	height: 70%;
 }
 
-.outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-	top:0;
-	padding-top:80px;
-}
-
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-}
 .inner {
-	
-    margin-left: auto;
-    margin-right: auto; 
-    width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 100%;
 	max-width:80%;
 	padding:20px;
 }
@@ -183,7 +162,6 @@ a:visited {
 }
 
 /* icons for about us */
-
 #icons {
 	display: block;
 	text-align: center;
@@ -199,6 +177,7 @@ a:visited {
 	max-height:100%;
 }
 
+/* kolonnene på contact us */
 .columns {
   -webkit-columns: 2;
   -moz-columns: 2;
@@ -209,26 +188,25 @@ a:visited {
 }
 
 .inner2 {
-	
-    margin-left: auto;
-    margin-right: auto; 
+  margin-left: auto;
+  margin-right: auto; 
 	max-width:80%;
 }
- 
+
+/* kolonner på equipment */
 .row {
-    content:"";
-    display: table ;
-    clear:both;
-    margin-left: auto;
-    margin-right: auto;
-    
+  content:"";
+  display: table ;
+  clear:both;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .col-3{
-    vertical-align: text-top;
-    margin-bottom: 10%;
-    width: 32.66666667%;
-    display: inline-block;
+  vertical-align: text-top;
+  margin-bottom: 10%;
+  width: 32.66666667%;
+  display: inline-block;
 }
 
 
@@ -238,27 +216,38 @@ a:visited {
     }
 }
 
+/* equipment img */
+.img-circle {
+    margin: 10%;
+    width: 200px;
+    border-radius: 100px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    max-width:100%;
+    max-height: 100%
+}
 
+/* drop-down meny */
 #menu li a:hover {
-    background: #9cd590; 
-    color:  #2e2c28;
+  background: #9cd590; 
+  color:  #2e2c28;
+  border: solid 1px black;
 }
 
 
 #menu div a {
-    background-image:  url(../img/noise_beige.png);
-    display: block;
-    padding: 3px;
-    color: #2e2c28;     
-
+  background-image:  url(../img/noise_gray.png);
+  display: block;
+  padding: 3px;
+  color: #2e2c28;
+  border: solid 1px black;          
 }
 
 #menu div a:hover {
-    background: #9cd590;
-    color:      #2e2c28;
+  background: #9cd590;
+  color:      #2e2c28;
 }
 
-
+/*content */
 #content {
 	height: 100%;
 	padding-bottom: 30px;
@@ -268,6 +257,7 @@ a:visited {
   text-align: center;
 }
 
+/* img carousel */
 .hideable {
   display: none;
 }
