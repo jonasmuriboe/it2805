@@ -6,7 +6,7 @@ function func() {
             '<ul>'+
                 '<li><a href="../pages/index.html">HJEM</a></li>'+
                 '<li><a href="../pages/aboutus.html">OM OSS</a></li>'+
-                '<li><a href="#" onmouseover="mopen('+"'m1'"+')" onmouseout="mclosetime()">UNDERGRUPPE</a>'+
+                '<li><a href="#" onmouseover="mopen('+"'m1'"+')" onmouseout="mclosetime()">UNDERGRUPPER</a>'+
                 	'<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">'+
                 		'<a href="../pages/dev.html"> DEV </a>'+
                 		'<a href="../pages/pr.html"> PR </a>'+
