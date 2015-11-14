@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
 	<meta charset="utf-8">
 	<title>Events</title>
@@ -7,22 +7,24 @@
 </head>
 
 <body>
+    <div id="emtpy"></div><!--Is used to import the iframe for checking the door-status -->
 	<div id="header">
-    	<div id="logo" class="logo"></div>
+    	<div id="logo"></div>
 	</div>
 
-	<section id="navbar"></section>
+	<section id="navbar"></section><!--inject.js puts the neccessary html here --> 
 
 	<section id="content">
         <h1>Arrangementer</h1>
-                <p>Hackerspace prøve å holde kurs så ofte som mulig innenfor temaer som folk syns er interessant. Vi ønsker å gi studenter ved NTNU muligheten og tilbudet om å lære meir om teknologi. I løpet av et semester kan vi derfor tilby kurs og workshop innenfor Arduino, 3D-printing og foredrag om virtual-reality. <br><br>
+        <p>
+            Hackerspace prøve å holde kurs så ofte som mulig innenfor temaer som folk syns er interessant. Vi ønsker å gi studenter ved NTNU muligheten og tilbudet om å lære meir om teknologi. I løpet av et semester kan vi derfor tilby kurs og workshop innenfor Arduino, 3D-printing og foredrag om virtual-reality. <br><br>
             
             Vi kommer til å publisere både her på nettsiden og på vår facebook side om kommende arrangement dette semesteret! Hold deg oppdatert.<br><br>
                     
-                    Under ligger bilder fra våre tidligare arrangementer. Kom og bli med!<br><br></p>
+            Under ligger bilder fra våre tidligare arrangementer. Kom og bli med!<br><br>
+        </p>
         
-    	<div id="1" class="hideable" style="display: block;">
-            <img src="../img/DSC00095.JPG"></div>
+    	<div id="1" class="hideable" style="display: block;"><img src="../img/DSC00095.JPG"></div>
 	    <div id="2" class="hideable"><img src="../img/DSC00059.JPG"></div>
     	<div id="3" class="hideable"><img src="../img/DSC00448.JPG"></div>
     	<div id="4" class="hideable"><img src="../img/DSC00602.JPG"></div>
@@ -31,12 +33,11 @@
     		<input type="button" onclick="toggleSlide(true)" value="Forward" class="btn_small">
     	</form>
 	</section>
-	<section id="footer"></section>
+	<section id="footer"></section><!--inject.js puts the neccessary html here --> 
 	 
+</body>
 <script type="text/javascript" src="../js/rollOverMenu.js"></script>
 <script type="text/javascript" src="../js/door_status.js"></script>
 <script type="text/javascript" src="../js/inject.js"></script>
 <script type="text/javascript" src="../js/carousel.js"></script>    
-    
-</body>
 </html>

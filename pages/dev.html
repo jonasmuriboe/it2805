@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
 	<meta charset="utf-8">
 	<title>dev</title>
@@ -7,30 +7,29 @@
 </head>
 
 <body>
+	<div id="empty"></div> <!--Is used to import the iframe for checking the door-status -->
 	<div id="header">
-    	<div id="logo" class="logo"></div>
+    	<div id="logo"></div>
 	</div>
 
-	<section id="navbar"></section>
+	<section id="navbar"></section><!--inject.js puts the neccessary html here --> 
 
 	<section id="content">
-
-            <!-- Putt inn tekst her -->
         <h1>/Dev</h1>
         <img src="../img/dev.jpg"/>
-        <p>/dev -  Vi er ansvarlige for alle backend-løsninger som finnes
-på Hackerspace, YO-knappen, dørAPI-et og nettsidene våre for å nevne noen. 
-Komiteens oppgaver ligger i hovedsak i å drifte disse løsningene, samt
-lage nye ved behov. Hvis man ønsker å få et godt forsprang innenfor web-
-og restapi-løsninger så er dette komiteen for deg. </p>
+        <p>
+        	/dev -  Vi er ansvarlige for alle backend-løsninger som finnes
+			på Hackerspace, YO-knappen, dørAPI-et og nettsidene våre for å nevne noen. 
+			komiteens oppgaver ligger i hovedsak i å drifte disse løsningene, samt
+			lage nye ved behov. Hvis man ønsker å få et godt forsprang innenfor web-
+			og restapi-løsninger så er dette komiteen for deg.
+		</p>
 	</section>
 
-	<section id="footer">
-	 </section>
-    
+	<section id="footer"></section><!--inject.js puts the neccessary html here --> 
+        
+</body>
 <script type="text/javascript" src="../js/rollOverMenu.js"></script>
 <script type="text/javascript" src="../js/door_status.js"></script>
 <script type="text/javascript" src="../js/inject.js"></script>
-    
-</body>
 </html>
