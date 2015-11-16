@@ -22,14 +22,14 @@ function checkDoor(){
 		//On index.html the Hackerspace-picture is changed as well.
 		if(b.isOpen.door){
 			var status = document.getElementById("status");
-			if(! status === null) {
+			if(status != null) {
 				document.getElementById("status").style.backgroundImage = "url('../img/Logo_green.png')";
 			}
 			document.getElementById("header").style.background = "#9cd590";
 			document.getElementById("logo").style.backgroundImage = "url('../img/Logo_round_green.png')";
 		} else {
 			var status = document.getElementById("status");
-			if(! status === null) {
+			if(status != null) {
 				document.getElementById("status").style.backgroundImage = "url('../img/Logo_white.png')";
 			}
 			document.getElementById("header").style.background = "#ea9989";
