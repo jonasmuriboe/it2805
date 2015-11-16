@@ -1,3 +1,12 @@
+/*
+FILE NAME: js/door_status.js
+WRITTEN BY: Jonas Hermansen Muribø
+WHEN: November 2015
+PURPOSE: reads the door-status of the hackerspace door
+and returns the state(open/closed). loads and updates
+the different bars that are responsive to this state
+*/
+
 function checkDoor(){
 	//Puts an iframe in the div with id="empty". Sets it to not display anything.
 	document.getElementById("empty").innerHTML='<iframe type="text/html" style="display:none;" src="http://hackerspace.idi.ntnu.no/api/door" style=""></iframe>';
@@ -17,14 +26,14 @@ function checkDoor(){
 				document.getElementById("status").style.backgroundImage = "url('../img/Logo_green.png')";
 			}
 			document.getElementById("header").style.background = "#9cd590";
-			document.getElementById("logo").style.backgroundImage = "url('../img/Logo_round_green.png')"
+			document.getElementById("logo").style.backgroundImage = "url('../img/Logo_round_green.png')";
 		} else {
 			var status = document.getElementById("status");
 			if(! status === null) {
 				document.getElementById("status").style.backgroundImage = "url('../img/Logo_white.png')";
 			}
 			document.getElementById("header").style.background = "#ea9989";
-			document.getElementById("logo").style.backgroundImage = "url('../img/Logo_round_white.png')"
+			document.getElementById("logo").style.backgroundImage = "url('../img/Logo_round_white.png')";
 		}
 	});
 }
