@@ -7,6 +7,10 @@ and returns the state(open/closed). loads and updates
 the different bars that are responsive to this state
 */
 
+//This script can only run on the same server as the actual door-script for the 
+//door to hackerspace (hackerspace.idi.ntnu.no/api/door), hence the placement at
+//hackerspace.idi.ntnu.no/webtek/pages/
+
 function checkDoor(){
 	//Puts an iframe in the div with id="empty". Sets it to not display anything.
 	document.getElementById("empty").innerHTML='<iframe type="text/html" style="display:none;" src="http://hackerspace.idi.ntnu.no/api/door" style=""></iframe>';

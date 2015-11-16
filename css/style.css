@@ -3,7 +3,7 @@ FILE NAME: css/style.css
 WRITTEN BY: Terje Kristiansen, Quang-Tam Huynh, Kristian Solheim Bortne and Jonas Hermansen Muribø
 WHEN: November 2015
 PURPOSE: style our documents to the clients
-preferences
+preferences and our own design
 */
 
 #m1 {
@@ -113,6 +113,7 @@ a:visited {
 #menu>ul>li>a {
   text-decoration:none;
   color:#2e2c28;
+
 }
 
 #navbar {
@@ -235,17 +236,16 @@ a:visited {
 
 /* drop-down meny */
 #menu li a:hover {
-  background: #9cd590; 
-  color:  #2e2c28;
+  color: #666;
+  border-bottom: 1px solid black;
 }
-
 
 #menu div a {
   background-image:  url(../img/noise_gray.png);
   display: block;
   padding: 3px;
   color: #2e2c28;
-  border: solid 1px black;          
+  border: solid 1px black;      
 }
 
 #menu div a:hover {
