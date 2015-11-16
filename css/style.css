@@ -1,3 +1,11 @@
+/*
+FILE NAME: css/style.css
+WRITTEN BY: Terje Kristiansen, Quang-Tam Huynh, Kristian Solheim Bortne and Jonas Hermansen Muribø
+WHEN: November 2015
+PURPOSE: style our documents to the clients
+preferences
+*/
+
 #m1 {
     display: none;
 
@@ -229,7 +237,6 @@ a:visited {
 #menu li a:hover {
   background: #9cd590; 
   color:  #2e2c28;
-  border: solid 1px black;
 }
 
 

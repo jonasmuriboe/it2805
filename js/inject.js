@@ -1,6 +1,14 @@
+/*
+FILE NAME: js/inject.js
+WRITTEN BY: Jonas Hermansen Muribø
+WHEN: November 2015
+PURPOSE: create cleaner html documents by inserting
+parts of the html code via javascript(nav-bar and footer)
+*/
+
+
 //Injects the most used html into all webpages, i.e the footer, nav-bar and header.
 //This saves us a lot of code in the html documents.
-
 function func() {
 	document.getElementById('navbar').innerHTML = '<div id="menu">'+
             '<ul>'+

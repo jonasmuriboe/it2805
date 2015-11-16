@@ -1,4 +1,10 @@
-// Copyright 2006-2007 javascript-array.com
+/*
+FILE NAME: js/rollOverMenu.js
+WRITTEN BY: Terje Kristiansen
+WHEN: November 2015
+PURPOSE: provide a drop-down menu for easy access 
+and overview of the subgroups of Hackerspace NTNU
+*/
 
 var timeout	= 500;
 var closetimer	= 0;
