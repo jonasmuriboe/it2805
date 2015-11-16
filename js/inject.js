@@ -2,6 +2,24 @@
 //This saves us a lot of code in the html documents.
 
 function func() {
+	document.getElementById('navbar').innerHTML = '<div id="menu">'+
+            '<ul>'+
+                '<li><a href="../pages/index.html">HJEM</a></li>'+
+                '<li><a href="../pages/aboutus.html">OM OSS</a></li>'+
+                '<li><a href="#" onmouseover="mopen('+"'m1'"+')" onmouseout="mclosetime()">UNDERGRUPPER</a>'+
+                	'<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">'+
+                		'<a href="../pages/dev.html"> DEV </a>'+
+                		'<a href="../pages/pr.html"> PR </a>'+
+                		'<a href="../pages/laboperatorene.html"> Labops </a>'+
+                		'<a href="../pages/prosjektgruppa.html"> Prosjektgruppa </a>'+
+                	'</div>'+
+                '</li>'+
+                '<li><a href="../pages/equipment.html">UTSTYR</a></li>'+
+                '<li><a href="../pages/event.html">ARRANGEMENT</a></li>'+
+                '<li><a href="../pages/contactus.html">KONTAKT</a></li>'+
+            '</ul>'+
+	    '</div>';
+
 	document.getElementById('footer').innerHTML = '<table id="links">'+
 			'<tr>'+
 				'<th>Har du spørsmål?</th>'+

@@ -1,66 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
 	<meta charset="utf-8">
-	<title>Hackerspace NTNU</title>
+	<title>Om oss</title>
 	<link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<div>
+	<div id="empty"></div><!--Is used to import the iframe for checking the door-status -->
 	<div id="header">
-    	<div id="logo" class="logo"></div>
+    	<div id="logo"></div>
 	</div>
 
-	<section id="navbar">
-        <div id="menu">
-            <ul>
-                <li><a href="../pages/index.html">HJEM</a></li>
-                <li><a href="../pages/aboutus.html">OM OSS</a></li>
-                <li><a href="../pages/subgroups.html">UNDERGRUPPE</a></li>
-                <li><a href="../pages/equipment.html">UTSTYR</a></li>
-                <li><a href="../pages/event.html">ARRANGEMENT</a></li>
-                <li><a href="../pages/contactus.html">KONTAKT</a></li>
-            </ul>
-	    </div>
-	</section>
+	<section id="navbar"></section><!--inject.js puts the neccessary html here --> 
 
 	<section id="content">
 		<div id="icons">
-		<ul>
-			<img class="icon" src="../img/wifi.png">
-            <img class="icon" src="../img/printer.png">
-            <img class="icon" src="../img/chip.png">
-            <img class="icon" src="../img/people.png">
-			<img class="icon" src="../img/oculus.png">
-            <img class="icon" src="../img/controller.png">
-        </ul>
-    </div>
-    <div class="columns">
+			<ul>
+				<img class="icon" src="../img/wifi.png">
+            	<img class="icon" src="../img/printer.png">
+            	<img class="icon" src="../img/chip.png">
+            	<img class="icon" src="../img/people.png">
+				<img class="icon" src="../img/oculus.png">
+            	<img class="icon" src="../img/controller.png">
+            </ul>
+    	</div>
+    	<div class="columns">
+    		<h1><b> Hackerspace NTNU</b></h1>
+    		<p>
+    			Hackerspace NTNU er et pilotprosjekt for å fremme interessen for ny teknologi. Målet er å alltid ha det kuleste og nyeste. Vi har droner, 3D-printer, leap motion, robot-kit og Oculus Rift for å nevne noe. </br></br>
 
-            <!-- Putt inn tekst her -->
-            
-    <h1><b> Hackerspace NTNU</b></h1>
-            <p>Hackerspace NTNU er et pilotprosjekt for å fremme interessen for ny teknologi. Målet er å alltid ha det kuleste og nyeste. Vi har droner, 3D-printer, leap motion, robot-kit og Oculus Rift for å nevne noe. </br></br>
+    			Vi ønsker å være et lavterskeltilbud og stiller derfor også opp og hjelper etter beste evne med utvikling av ny teknologi. </br></br>
 
-Vi ønsker å være et lavterskeltilbud og stiller derfor også opp og hjelper etter beste evne med utvikling av ny teknologi. </br></br>
+    			Det holdes regelmessig kurs for både nybegynnere og viderekomne for å supplementere dette. Nybegynnerkurs i Arduino og 3D-printing har vært svært populære tidligere, og noe vi tenker å holde igjen. </br></br>
 
-Det holdes regelmessig kurs for både nybegynnere og viderekomne for å supplementere dette. Nybegynnerkurs i Arduino og 3D-printing har vært svært populære tidligere, og noe vi tenker å holde igjen. </br></br>
+    			Om du er en førsteklassing som trenger hjelp med ditt første Arduino-prosjekt eller er en fjerdeklassing som ønsker å lage en 3D-modell av Trondheim, kan vi stille med både utstyr og kompetanse. Dersom vi ikke kan svare på spørsmål, vil vi etter beste evne finne noen som kan hjelpe. </br></br>
 
-Om du er en førsteklassing som trenger hjelp med ditt første Arduino-prosjekt eller er en fjerdeklassing som ønsker å lage en 3D-modell av Trondheim, kan vi stille med både utstyr og kompetanse. Dersom vi ikke kan svare på spørsmål, vil vi etter beste evne finne noen som kan hjelpe. </br></br>
+    			Vi har <b>fast åpningstid hver dag fra klokken 12 til 18</b>, og er ellers ofte åpen andre dager såfremt en av oss med tilgang til rommet er på NTNU og har tid til å holde åpent.</br></br>
 
-Vi har <b>fast åpningstid hver dag fra klokken 12 til 18</b>, og er ellers ofte åpen andre dager såfremt en av oss med tilgang til rommet er på NTNU og har tid til å holde åpent.</br></br>
-
-Kom gjerne innom for å se hva vi driver med!</p>
-
-<img class="pictures" src="../img/map.png">
-</div>
+    			Kom gjerne innom for å se hva vi driver med!
+			</p>
+			<img class="pictures" src="../img/map.png">
+		</div>
 	</section>
 
-	<section id="footer">
-	 </section>
-	 
+	<section id="footer"></section><!--inject.js puts the neccessary html here -->
+
 </body>
+<script type="text/javascript" src="../js/rollOverMenu.js"></script>
 <script type="text/javascript" src="../js/door_status.js"></script>
 <script type="text/javascript" src="../js/inject.js"></script>
 </html>

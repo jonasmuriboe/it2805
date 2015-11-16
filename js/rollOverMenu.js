@@ -42,5 +42,4 @@ function mcancelclosetime()
 }
 
 // close layer when click-out
-
 //document.onclick = mclose; 
